@@ -1,21 +1,19 @@
-package com.example.calculator;
+package com.example.android_learn.calculator;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.calculator.util.SimpleCalculator;
-
+import com.example.android_learn.R;
+import com.example.android_learn.util.SimpleCalculator;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class Calculator extends AppCompatActivity implements View.OnClickListener {
 
     private List<String> conInput;
     private String preInput;
@@ -27,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.main_activity);
+        setContentView(R.layout.calculator_activity);
 
         conInput = new ArrayList<>();
         preInput = "";
