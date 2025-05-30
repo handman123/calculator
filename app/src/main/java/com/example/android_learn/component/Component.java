@@ -50,10 +50,10 @@ public class Component extends AppCompatActivity implements View.OnClickListener
         int id = v.getId();
         if (id == R.id.btn_component_start) {
             // 页面跳转
-            Intent intent = new Intent(Component.this, ActFinishAActivity.class);
-            startActivity(intent);
+//            Intent intent = new Intent(Component.this, ActFinishAActivity.class);
+//            startActivity(intent);
         } else if (id == R.id.btn_component_send_rec) {
-            Intent intent = new Intent(Component.this, ActSentMsg.class);
+            Intent intent = new Intent(Component.this, PageActivityA.class);
             startActivity(intent);
         }
     }
@@ -94,8 +94,5 @@ public class Component extends AppCompatActivity implements View.OnClickListener
         mStr = String.format("%s %s %s %s\n", mStr, curDate, TAG, desc);
         tv_component_log.setText(mStr);
     }
-
-
-
 
 }
